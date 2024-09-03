@@ -1,0 +1,105 @@
+@import url(main.css);
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: url(../../assets/home/background-home-desktop.jpg) center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+    .content__all{
+        width: 100%;
+        
+        .contentInfoALL{
+            width: 100%;
+            height: 100vh;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .bx-infoPage{
+                width: 1110px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .contentIntroductionHomePage{
+                    width: 540px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .introductionFrase{
+                        color: var(--blue-300);
+                        text-transform: uppercase;
+                        font-size: var(--Text-Preset-5-Bellefair-Regular);
+                        font-family: var(--fontF-1);
+                    }
+
+                    .title{
+                        font-size: var(--Text-Preset-1-Bellefair-Regular);
+                        font-family: var(--fontF-1);
+                        font-weight: 400;
+                        text-transform: uppercase;
+                    }
+
+                    .txt{
+                        color: var(--blue-300);
+                        font-family: var(--fontF-1);
+                        line-height: 180%;
+                        font-size: var(--Text-Preset-6-Bellefair-Regular);
+                    }
+                }
+
+
+                .content-btnExplorer{
+                    position: relative;
+                    width: 272px;
+                    height: 272px;
+                    background-color: white;
+                    border-radius: 50%;
+                    
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        background-color: transparent;
+                        border-radius: 50%;
+                        z-index: -1;
+                    }
+
+                    &:hover{
+                        &::before{animation: sphand .5s forwards; background-color: hsl(0, 0%, 100%, 25%);}
+                    }
+
+                    .exploreMore{
+                        color: var(--blue-900);
+                        opacity: 50%;
+                        font-size: var(--Text-Preset-4-Bellefair-Regular);
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes sphand {
+    0%{
+        width: 200px;
+        height: 200px;
+    }
+    100%{
+        width: 400px;
+        height: 400px;
+    }
+}

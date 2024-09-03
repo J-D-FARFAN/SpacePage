@@ -1,0 +1,112 @@
+@import url(../main.css);
+
+body{
+    background: url(../../../assets/destination/background-destination-desktop.jpg) center no-repeat;
+    background-size: cover;
+
+    .content__all{
+        .content__allDestinations{
+            width: 100%;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            color: var(--white);
+            font-family: var(--fontF-1);
+
+            .bx-destinations{
+                width: 1110px;
+                height: 100%;
+                padding: var(--spacing-preset-5) 0;
+
+                
+
+                .destinationInfo{
+                    height: 524px;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 3rem;
+
+                    .bx-planet{
+                        width: fit-content;
+                        height: fit-content;
+                        .imagesPlanet{width: 440px;}
+                    }
+
+                    .descriptionPlanet{
+                        width: 539px;
+
+                        .navbarPlanets{
+                            margin-bottom: var(--spacing-preset-6);
+                            .navbar{
+                                display: flex;
+                                gap: var(--spacing-preset-7);
+
+                                .itmsNavbarPlanets{
+                                    position: relative;
+                                    text-transform: uppercase;
+                                    letter-spacing: var(--spacing-preset-13);
+                                    font-size: var(--Text-Preset-7-Bellefair-Regular);
+                                    font-weight: 300;
+                                    cursor: pointer;
+
+                                    &::before{
+                                        content: '';
+                                        position: absolute;
+                                        width: 100%;
+                                        height: 2px;
+                                        background-color: transparent;
+                                        bottom: -16px;
+                                        transition: .3s;
+                                    }
+
+                                    &:hover{&::before{background-color: hsl(0, 0%, 100%, 50%);}}
+                                }
+                            }
+                        }
+
+                        .titlePlanet{
+                            font-size: var(--Text-Preset-2-Bellefair-Regular);
+                            text-transform: uppercase   ;
+                        }
+
+                        .txt{
+                            margin-top: var(--spacing-preset-9);
+                            color: var(--blue-300);
+                            line-height: 180%;
+                            font-size: var(--Text-Preset-6-Bellefair-Regular);
+                        }
+                        
+                        hr{border-color: hsl(0, 0%, 100%, 25%); margin: var(--spacing-preset-6) 0;}
+
+                        .bx-extraInfo{
+                            display: flex;
+                            align-items: center;
+                            gap: var(--spacing-preset-8);
+
+                            .contentDistance-Travel{
+                                display: flex;
+                                flex-direction: column;
+                                gap: var(--spacing-preset-10);
+
+                                .titleDistance-Travel{
+                                    font-size: var(--Text-Preset-8-Bellefair-Regular);
+                                    text-transform: uppercase;
+                                    letter-spacing: var(--spacing-preset-13);
+                                    color: var(--blue-300);
+                                }
+
+                                .stylesGeneralesPlanesKmDays{
+                                    font-size: var(--Text-Preset-5-Bellefair-Regular);
+                                    font-weight: 300;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

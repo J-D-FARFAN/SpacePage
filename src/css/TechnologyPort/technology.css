@@ -1,0 +1,88 @@
+@import url(../main.css);
+
+body{
+    height: 100vh;
+    background: url(../../../assets/technology/background-technology-desktop.jpg) center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    color: white;
+
+    .content__all{
+
+        .content__allInfoTechnologySpacePort{
+            padding: 0 0 0 15rem;
+
+            .allInfoTechnologySpacePort{
+                .titlesSections{
+                    margin-top: var(--spacing-preset-5);
+                    margin-bottom: var(--spacing-preset-8);
+                }
+                .descriptionTechnologySpacePort{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    gap: var(--spacing-preset-7);
+
+                    .introductionDescription{
+                        display: flex;
+                        align-items: center;
+                        gap: var(--spacing-preset-4);
+
+                        .content--navbarControlTechnology{
+                            height: 304px;
+
+                            .navbar{
+                                width: 80px;
+                                height: 100%;
+
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                .controlsTechnology{
+                                    width: 80px;
+                                    height: 80px;
+                                    border-radius: 50%;
+                                    border: 1px solid hsl(0, 0%, 100%, 25%);
+
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    cursor: pointer;
+                                    font-size: var(--Text-Preset-5-Bellefair-Regular);
+                                    font-weight: 400;
+                                    transition: .3s;
+
+                                    &:hover{border-color: white;}
+                                }
+
+                                .activeControlTechnology{background-color: white; border-color: transparent; color: var(--blue-900);}
+                            }
+                        }
+
+                        .descriptionTechnology{
+
+                            .nameTechnologyPort{
+                                display: block;
+                                font-size: var(--Text-Preset-4-Bellefair-Regular);
+                                text-transform: uppercase;
+                                color: hsl(0, 0%, 100%, 50.42%);
+                                margin-bottom: var(--spacing-preset-9);
+                            }
+
+                            .nameVehicleTechnology{
+                                display: block;
+                                text-transform: uppercase;
+                                font-size: var(--Text-Preset-3-Bellefair-Regular);
+                                font-weight: 400;
+                                margin-bottom: 26px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
